@@ -1,5 +1,5 @@
 import React from 'react';
-import { Mail, Github, Linkedin, Twitter } from 'lucide-react';
+import { Mail, Github, Linkedin, Instagram } from 'lucide-react';
 import { personalInfo, socialLinks } from '../../data/personal';
 import Button from '../common/Button';
 
@@ -8,7 +8,7 @@ const Contact = () => {
     email: Mail,
     github: Github,
     linkedin: Linkedin,
-    twitter: Twitter
+    instagram: Instagram
   };
 
   const handleContactClick = () => {

@@ -23,8 +23,8 @@ export const projects = [
     },
     {
       id: 3,
-      title: "Weather Dashboard",
-      description: "This project is a machine learning-powered app designed to classify music tracks into genres (e.g., Jazz, Rock, Classical, Hip-Hop, etc.) using audio signal processing and deep learning models. The system extracts features like mel spectrograms, MFCCs, and chroma features from music clips and feeds them into multiple classification models including a Convolutional Neural Network (CNN).Developed entirely in Python using Jupyter Notebook, this app provides an interactive, end-to-end experience from audio preprocessing to genre prediction.",
+      title: "Music Genre Classification",
+      description: "This project is a Python-based app built in Jupyter Notebook that uses machine learning and deep learning—especially a Convolutional Neural Network (CNN)—to classify music tracks into genres. It processes audio clips by extracting features like mel spectrograms, MFCCs, and chroma features, offering an interactive, end-to-end pipeline from audio preprocessing to genre prediction.",
       image: "assets/images/projects/Music-Genre.jpg",
       technologies: ["Jupyter Notebook", "Python", "Neural Networks"],
       github: "https://github.com/an33k25/Music-Genre-Classification-Project",

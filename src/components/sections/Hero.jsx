@@ -213,20 +213,20 @@ const Hero = () => {
 
       {/* Content */}
       <div className="max-w-xs sm:max-w-lg md:max-w-2xl lg:max-w-4xl relative z-10 mx-auto text-center flex flex-col items-center justify-center py-24 sm:py-32 lg:py-40">
-        <div className="mb-8">
+        <div className="mt-20">
           <h1 className="text-3xl sm:text-5xl lg:text-7xl font-light mb-6 leading-tight text-white">
             Hello, I'm{" "}
             <span className="font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
               {personalInfo.name}
             </span>
           </h1>
-          <p className="text-base sm:text-xl lg:text-2xl text-gray-200 mb-8 max-w-2xl mx-auto leading-relaxed">
+          <p className="text-base w-full font-code sm:text-xl lg:text-xl text-gray-200 mb-8 max-w-4xl mx-auto leading-relaxed">
             {personalInfo.tagline}
           </p>
         </div>
 
-        <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12 w-full">
-          <Button onClick={() => scrollToSection("work")} variant="primary" className="w-full sm:w-auto">
+        <div className="flex flex-col sm:flex-row gap-4 font-code justify-center mb-12 w-full">
+          <Button onClick={() => scrollToSection("featured-work")} variant="primary" className="w-full sm:w-auto">
             View My Work
           </Button>
           <Button onClick={() => scrollToSection("contact")} variant="outline" className="w-full sm:w-auto">

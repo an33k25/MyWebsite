@@ -8,7 +8,9 @@ const About = () => {
   return (
     <section id="about"  className="py-20 px-4 sm:px-6 lg:px-8 bg-gray-100 ">
       <div className="max-w-4xl mx-auto">
-        <h2 className="text-4xl font-light mb-12 text-center">About Me</h2>
+      <h2 className="text-4xl font-bold font-code mb-12 text-center">about me</h2>
+            
+  
         <div className="grid md:grid-cols-2 gap-12 items-center">
             {personalInfo.aboutImage ? (
               <img 

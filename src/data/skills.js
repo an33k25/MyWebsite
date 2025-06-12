@@ -55,11 +55,11 @@ export const skills = {
   // For the main display (most important skills)
   export const primarySkills = [
     "React",
-    "JavaScript",
+    "HTML",
     "Python", 
-    "Node.js",
+    "JavaScript",
     "Tailwind CSS",
     "Git",
     "MongoDB",
-    "AWS"
+    "SwiftUi"
   ];

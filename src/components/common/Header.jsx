@@ -49,21 +49,21 @@ const Header = () => {
   };
 
   const navItems = [
-    { label: 'About', id: 'about' },
-    { label: 'Featured', id: 'featured-work' },
-    { label: 'Other Projects', id: 'other-work' },
-    { label: 'Contact', id: 'contact' }
+    { label: 'about', id: 'about' },
+    { label: 'featured', id: 'featured-work' },
+   // { label: 'other projects', id: 'other-work' },
+    { label: 'contact', id: 'contact' }
   ];
 
   return (
     <header 
-      className={`fixed top-0 left-0 right-0 z-50 transform transition-all duration-300 ease-in-out
+      className={`fixed top-0 left-0 right-0 z-50 font-code transform transition-all duration-300 ease-in-out
         ${isHidden ? '-translate-y-full' : 'translate-y-0'}
-        ${isScrolled ? 'bg-white/90 backdrop-blur-md shadow-sm' : 'bg-white'}`}
+        ${isScrolled ? 'bg-transparent backdrop-blur-md shadow-sm' : 'bg-transparent'} text-white`}
     >
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center py-4">
-          <div className="font-bold text-xl cursor-pointer" onClick={() => scrollToSection('hero')}>
+          <div className="font-bold text-xl cursor-pointer text-white" onClick={() => scrollToSection('hero')}>
             {personalInfo.name}
           </div>
           
@@ -73,7 +73,7 @@ const Header = () => {
               <button 
                 key={item.id}
                 onClick={() => scrollToSection(item.id)} 
-                className="hover:text-blue-600 transition-colors text-base lg:text-lg"
+                className="hover:text-blue-300 transition-colors text-base lg:text-sm text-white"
               >
                 {item.label}
               </button>
@@ -83,7 +83,7 @@ const Header = () => {
           {/* Mobile Menu Button */}
           <button 
             onClick={() => setIsMenuOpen(!isMenuOpen)}
-            className="md:hidden p-2"
+            className="md:hidden p-2 text-white"
             aria-label="Toggle menu"
           >
             {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
@@ -92,13 +92,13 @@ const Header = () => {
 
         {/* Mobile Menu */}
         {isMenuOpen && (
-          <nav className="md:hidden bg-white border-t rounded-b shadow-lg animate-fade-in">
-            <div className="px-4 py-2 space-y-2 flex flex-col">
+          <nav className="md:hidden bg-black bg-opacity-50 border-t text-white rounded-b shadow-lg animate-fade-in">
+            <div className="px-4 py-2 space-y-2 text-white flex flex-col">
               {navItems.map((item) => (
                 <button 
                   key={item.id}
                   onClick={() => scrollToSection(item.id)} 
-                  className="block w-full text-left py-2 hover:text-blue-600 transition-colors text-base"
+                  className="block w-full text-left py-2 hover:text-blue-600 transition-colors text-base text-gray-900"
                 >
                   {item.label}
                 </button>
