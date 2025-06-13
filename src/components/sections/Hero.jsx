@@ -18,7 +18,7 @@ const Hero = () => {
       <div className="absolute inset-0 w-full h-full">
         <svg
           id="visual"
-          viewBox="0 0 400 400"
+          viewBox="0 0 400 500 "
           className="w-full h-full object-cover"
           xmlns="http://www.w3.org/2000/svg"
           xmlnsXlink="http://www.w3.org/1999/xlink"
@@ -29,9 +29,9 @@ const Hero = () => {
             {`
               @keyframes float {
                 0% { transform: translateY(0px) translateX(0px); }
-                25% { transform: translateY(-10px) translateX(-15px); }
+                25% { transform: translateY(-10px) translateX(-10px); }
                 50% { transform: translateY(0px) translateX(-20px); }
-                75% { transform: translateY(10px) translateX(-15px); }
+                75% { transform: translateY(10px) translateX(-10px); }
                 100% { transform: translateY(0px) translateX(0px); }
               }
               .float-animation {

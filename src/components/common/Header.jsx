@@ -92,13 +92,13 @@ const Header = () => {
 
         {/* Mobile Menu */}
         {isMenuOpen && (
-          <nav className="md:hidden bg-black bg-opacity-50 border-t text-white rounded-b shadow-lg animate-fade-in">
-            <div className="px-4 py-2 space-y-2 text-white flex flex-col">
+          <nav className="md:hidden  bg-white bg-opacity-30 border-t text-white rounded-b shadow-lg animate-fade-in">
+            <div className="px-4 py-2  space-y-2 text-white flex flex-col">
               {navItems.map((item) => (
                 <button 
                   key={item.id}
                   onClick={() => scrollToSection(item.id)} 
-                  className="block w-full text-left py-2 hover:text-blue-600 transition-colors text-base text-gray-900"
+                  className="block w-full text-left py-2 hover:text-blue-600 transition-colors text-base"
                 >
                   {item.label}
                 </button>
